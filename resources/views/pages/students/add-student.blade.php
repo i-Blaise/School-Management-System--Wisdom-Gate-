@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -179,7 +179,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="section-block" id="parent">
-                                    <h3 class="section-title">Students Parent/Guardian</h3>
+                                    <h3 class="section-title">Students Parent/Guardian 1</h3>
                                     <p>Info about the Students parent or guardian</p>
                                 </div>
                                 <div class="card">
@@ -255,10 +255,15 @@
                                     <div class="card-body border-top">
                                         <h5>Parent/Guardian 2</h5>
                                         <form>
+
+                                        <label class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="notapplicable" onclick="notapplicableCheck()"><span class="custom-control-label">Not Applicable</span>
+                                        </label>
+
                                         <div class="form-row">
                                             <div class="form-group col-md-2">
                                                 <label for="input-select" class="col-form-label">Title*</label>
-                                                <select class="form-control" id="input-select">
+                                                <select class="form-control" id="parent2-title">
                                                     <option>Mr.</option>
                                                     <option>Mrs.</option>
                                                     <option>Ms.</option>
@@ -268,26 +273,26 @@
                                             </div>
                                             <div class="form-group col-md-5">
                                                 <label for="inputText3" class="col-form-label">First Name*</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-fname" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-5">
                                                 <label for="inputText3" class="col-form-label">Last Names*</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-lname" type="text" class="form-control">
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
                                                 <label for="inputText3" class="col-form-label">Occupation*</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-occupation" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputText3" class="col-form-label">Employer</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-employer" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="input-select" class="col-form-label">Level Of Education*</label>
-                                                <select class="form-control" id="input-select">
+                                                <select class="form-control" id="parent2-education">
                                                     <option>JHS</option>
                                                     <option>SHS</option>
                                                     <option>Diploma</option>
@@ -301,22 +306,22 @@
                                         <div class="form-row">
                                             <div class="form-group col-md-12">
                                                 <label for="inputText3" class="col-form-label">Address*</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-address" type="text" class="form-control">
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
                                                 <label for="inputText3" class="col-form-label">Phone Number*</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-num" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputText3" class="col-form-label">Email Address</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-email" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-4">
                                                 <label for="inputText3" class="col-form-label">Relationship to Applicant*</label>
-                                                <input id="inputText3" type="text" class="form-control">
+                                                <input id="parent2-relation" type="text" class="form-control">
                                             </div>
                                         </div>
                                         </form>
@@ -331,7 +336,7 @@
                         <!-- ============================================================== -->
 
 
- 
+
                     </div>
                     <!-- ============================================================== -->
                     <!-- sidenavbar -->
@@ -405,6 +410,34 @@
             })
     });
     </script>
+    <script>
+        function notapplicableCheck() {
+            var isChecked = document.getElementById("notapplicable").checked;
+            if (isChecked) {
+                document.getElementById("parent2-title").disabled = true
+                document.getElementById("parent2-fname").disabled = true
+                document.getElementById("parent2-lname").disabled = true
+                document.getElementById("parent2-occupation").disabled = true
+                document.getElementById("parent2-employer").disabled = true
+                document.getElementById("parent2-education").disabled = true
+                document.getElementById("parent2-address").disabled = true
+                document.getElementById("parent2-num").disabled = true
+                document.getElementById("parent2-email").disabled = true
+                document.getElementById("parent2-relation").disabled = true
+            } else {
+                document.getElementById("parent2-title").disabled = false
+                document.getElementById("parent2-fname").disabled = false
+                document.getElementById("parent2-lname").disabled = false
+                document.getElementById("parent2-occupation").disabled = false
+                document.getElementById("parent2-employer").disabled = false
+                document.getElementById("parent2-education").disabled = false
+                document.getElementById("parent2-address").disabled = false
+                document.getElementById("parent2-num").disabled = false
+                document.getElementById("parent2-email").disabled = false
+                document.getElementById("parent2-relation").disabled = false
+            }
+        }
+    </script>
 </body>
- 
+
 </html>
