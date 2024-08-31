@@ -192,7 +192,7 @@
                                                 <select class="form-control" id="input-select">
                                                     <option>Mr.</option>
                                                     <option>Mrs.</option>
-                                                    <option>Ms.</option>
+                                                    <option>Miss</option>
                                                     <option>Dr.</option>
                                                     <option>Prof.</option>
                                                 </select>
@@ -219,6 +219,8 @@
                                             <div class="form-group col-md-4">
                                                 <label for="input-select" class="col-form-label">Level Of Education*</label>
                                                 <select class="form-control" id="input-select">
+                                                    <option>None</option>
+                                                    <option>Primary</option>
                                                     <option>JHS</option>
                                                     <option>SHS</option>
                                                     <option>Diploma</option>
@@ -266,7 +268,7 @@
                                                 <select class="form-control" id="parent2-title">
                                                     <option>Mr.</option>
                                                     <option>Mrs.</option>
-                                                    <option>Ms.</option>
+                                                    <option>Miss</option>
                                                     <option>Dr.</option>
                                                     <option>Prof.</option>
                                                 </select>
@@ -293,6 +295,8 @@
                                             <div class="form-group col-md-4">
                                                 <label for="input-select" class="col-form-label">Level Of Education*</label>
                                                 <select class="form-control" id="parent2-education">
+                                                    <option>None</option>
+                                                    <option>Primary</option>
                                                     <option>JHS</option>
                                                     <option>SHS</option>
                                                     <option>Diploma</option>
