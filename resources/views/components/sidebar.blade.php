@@ -14,14 +14,14 @@
                         <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}" href="{{ route('home') }}"><i class="fa fa-fw fa-user-circle"></i>Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{ Route::currentRouteName() == 'add-student' ? 'active' : '' }}" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Students</a>
+                        <a class="nav-link {{ Route::currentRouteName() == 'add-student' || Route::currentRouteName() == 'all-student' ? 'active' : '' }}" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Students</a>
                         <div id="submenu-2" class="collapse submenu" style="">
                             <ul class="nav flex-column">
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('add-student') }}">Add New Student<span class="badge badge-secondary">New</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="pages/general.html">All Students</a>
+                                    <a class="nav-link" href="{{ route('all-student') }}">All Students</a>
                                 </li>
                             </ul>
                         </div>
