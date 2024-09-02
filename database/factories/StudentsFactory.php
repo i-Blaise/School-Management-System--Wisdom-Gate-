@@ -14,6 +14,7 @@ class StudentsFactory extends Factory
      *
      * @return array<string, mixed>
      */
+
     public function definition(): array
     {
         $min = strtotime('-5 years'); // Minimum date (e.g., 5 years ago)

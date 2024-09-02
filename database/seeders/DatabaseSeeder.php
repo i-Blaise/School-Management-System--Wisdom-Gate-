@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Guardian;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -20,6 +21,7 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call(StudnetsSeeder::class);
+        // $this->call(StudnetsSeeder::class);
+        $this->call(Guardian::class);
     }
 }
