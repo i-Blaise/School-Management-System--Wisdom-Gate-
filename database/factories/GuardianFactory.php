@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Guardian>
  */
-class GuardiansFactory extends Factory
+class GuardianFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class GuardiansFactory extends Factory
 
 
 
-    protected $model = Guardian::class;
+    // protected $model = Guardian::class;
 
     public function definition(): array
     {

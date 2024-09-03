@@ -86,7 +86,11 @@
                                         <tbody>
                                             @foreach ($students as $student)
                                             <tr>
-                                                <td>{{ $student->first_name.' '.$student->other_name.' '.$student->last_name }}</td>
+                                                <td>
+                                                    <a href="{{ route('student-profile') }}">
+                                                    {{ $student->first_name.' '.$student->other_name.' '.$student->last_name }}
+                                                    </a>
+                                                </td>
                                                 <td>
                                                     <div class="m-r-10"><img src="{{ $student->student_image }}" alt="user" class="rounded" width="45"></div>
                                                 </td>
