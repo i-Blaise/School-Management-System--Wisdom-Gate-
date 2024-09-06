@@ -163,32 +163,32 @@
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card">
                                                     <div class="card-body">
-                                                        <h1 class="mb-1">9</h1>
-                                                        <p>Campaign Invitations</p>
+                                                        <h1 class="mb-1">M</h1>
+                                                        <p>Gender</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card">
                                                     <div class="card-body">
-                                                        <h1 class="mb-1">35</h1>
-                                                        <p>Finished Campaigns</p>
+                                                        <h1 class="mb-1">WGS-1114</h1>
+                                                        <p>Index Code</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card">
                                                     <div class="card-body">
-                                                        <h1 class="mb-1">8</h1>
-                                                        <p>Accepted Campaigns</p>
+                                                        <h1 class="mb-1">3</h1>
+                                                        <p>Class</p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                                                 <div class="card">
                                                     <div class="card-body">
-                                                        <h1 class="mb-1">1</h1>
-                                                        <p>Declined Campaigns</p>
+                                                        <h1 class="mb-1">13</h1>
+                                                        <p>Age</p>
                                                     </div>
                                                 </div>
                                             </div>
