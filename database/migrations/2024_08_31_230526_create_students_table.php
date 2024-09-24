@@ -27,6 +27,9 @@ return new class extends Migration
             $table->string('residence_address');
             $table->string('num_of_siblings')->nullable();
             $table->timestamps();
+
+            // Add Health information to  this table ---- Headmasters Remarks Included----- Also update Child's Profile
+            // Sibling and household members should be a different table
         });
     }
 
