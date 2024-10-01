@@ -14,12 +14,14 @@ return new class extends Migration
         Schema::create('guardians', function (Blueprint $table) {
             $table->id();
             $table->string('ward_index');
-            $table->string('ward_fullname');
             $table->enum('title', ['Mr.', 'Mrs', 'Miss', 'Dr.', 'Prof.']);
             $table->string('first_name');
             $table->string('last_name');
+            $table->string('hometown')->nullable();
+            $table->string('nationality')->nullable();
             $table->string('occupation')->nullable();
             $table->string('employer')->nullable();
+            $table->string('employer_address')->nullable();
             $table->enum('education_level', ['None', 'Primary', 'JHS', 'SHS', 'Diploma', 'Bachelors', 'Masters', 'PHD'])->default('None');
             $table->string('residence_address');
             $table->string('phone_number1');
