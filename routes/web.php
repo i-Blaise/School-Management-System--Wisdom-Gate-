@@ -25,6 +25,8 @@ Route::get('/student-profile', function () {
 
 Route::get('/all-student', [StudentController::class, 'index'])->name('all-student');
 
+Route::post('/store-new-student', [StudentController::class, 'addNewStudent'])->name('store-new-student');
+
 
 Route::get('/delete-student', function () {
         Students::truncate();

@@ -30,11 +30,11 @@ return new class extends Migration
             $table->string('num_of_siblings')->nullable();
             $table->string('guardian1_id')->nullable();
             $table->string('guardian2_id')->nullable();
-            $table->string('language1')->nullable();
+            $table->string('language1');
             $table->string('language2')->nullable();
             $table->string('language3')->nullable();
             $table->enum('living_with_both_parents', ['yes', 'no'])->nullable();
-            $table->text('not_living_with_both_parents', ['yes', 'no'])->nullable();
+            $table->text('why_not_living_w_both_parents')->nullable();
             $table->string('hospital_born')->nullable();
             $table->string('Immunization_record')->nullable();
             $table->string('doctors_name')->nullable();

@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="../assets/vendor/datepicker/tempusdominus-bootstrap-4.css" />
     <link rel="stylesheet" href="../assets/vendor/inputmask/css/inputmask.css" />
     <link rel="stylesheet" href="../assets/vendor/bootstrap-select/css/bootstrap-select.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
 </head>
 
 <body>
@@ -78,11 +81,13 @@
                                 <div class="card">
                                     <h5 class="card-header">Student Info</h5>
                                     <div class="card-body">
-                                        <form>
+                                        <form action="{{ route('store-new-student') }}" method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        @method('POST')
                                             <div class="form-row">
                                                 <div class="form-group col-md-4">
                                                     <label for="inputText3" class="col-form-label">First Name*</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="first_name">
                                                 </div>
                                                 <div class="form-group col-md-4">
                                                     <label for="inputText3" class="col-form-label">Other Name</label>
@@ -196,7 +201,6 @@
                                                 </div>
                                             </div>
 
-                                        </form>
                                     </div>
                                 </div>
 
@@ -206,7 +210,6 @@
                                 <div class="card" id="student-health">
                                     <h5 class="card-header">Student Health Info</h5>
                                     <div class="card-body">
-                                        <form>
                                             <div class="form-row">
                                                 <div class="form-group col-md-4">
                                                     <label for="inputText3" class="col-form-label">Hospital Born*</label>
@@ -284,6 +287,7 @@
                                                 </div>
                                             </div>
 
+                                            <button type="submit" class="btn btn-primary btn-block">Submit Form</button>
                                         </form>
                                     </div>
                                 </div>
@@ -304,7 +308,7 @@
                                 <div class="card">
                                     <h5 class="card-header">Parent/Guardian 1</h5>
                                     <div class="card-body">
-                                        <form>
+                                        {{-- <form> --}}
                                         <div class="form-row">
                                             <div class="form-group col-md-2">
                                                 <label for="input-select" class="col-form-label">Title*</label>
@@ -447,7 +451,7 @@
                                                 <input id="parent2-relation" type="text" class="form-control">
                                             </div>
                                         </div>
-                                        </form>
+                                        {{-- </form> --}}
                                     </div>
                                 </div>
                             </div>
