@@ -141,9 +141,16 @@
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">Hometown*</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Nationality*</label>
                                                     <input id="inputText3" type="text" class="form-control">
                                                 </div>
+                                            </div>
+
+                                            <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="input-select" class="col-form-label">Gender*</label>
                                                     <select class="form-control" id="input-select">
@@ -151,19 +158,131 @@
                                                         <option>Female</option>
                                                     </select>
                                                 </div>
-                                            </div>
-
-                                            <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Residence Address*</label>
                                                     <input id="inputText3" type="text" class="form-control">
                                                 </div>
+                                            </div>
+
+                                            <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Number of Siblings*</label>
                                                     <input id="inputText3" type="text" class="form-control">
                                                 </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="input-select" class="col-form-label">Living with both Parent*</label>
+                                                    <select class="form-control" id="input-select">
+                                                        <option>Yes</option>
+                                                        <option>No</option>
+                                                    </select>
+                                                </div>
                                             </div>
 
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputText3" class="col-form-label">If no, why?*</label>
+                                                    <textarea id="inputText3" type="text" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">Language Spoken*</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">Second Language Spoken</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                        </form>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="card" id="student-health">
+                                    <h5 class="card-header">Student Health Info</h5>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputText3" class="col-form-label">Hospital Born*</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">Upload Immunization Record</label>
+                                                    <div class="custom-file mb-3">
+                                                        <input type="file" class="custom-file-input" id="customFile">
+                                                        <label class="custom-file-label" for="customFile">File Input</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputText3" class="col-form-label">Doctors Name</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputText3" class="col-form-label">Preferred Hospital</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputText3" class="col-form-label">Blood Group Type</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="input-select" class="col-form-label">NHIS?*</label>
+                                                    <select class="form-control" id="input-select">
+                                                        <option>Yes</option>
+                                                        <option>No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">List Allergies</label>
+                                                    <textarea id="inputText3" type="text" class="form-control"></textarea>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">List Any Health Challenges</label>
+                                                    <textarea id="inputText3" type="text" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputText3" class="col-form-label">Any Special Needs?</label>
+                                                    <textarea id="inputText3" type="text" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">Our Reference</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputText3" class="col-form-label">Your Reference</label>
+                                                    <input id="inputText3" type="text" class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputText3" class="col-form-label">Headmasters Remarks</label>
+                                                    <textarea id="inputText3" type="text" class="form-control"></textarea>
+                                                </div>
+                                            </div>
 
                                         </form>
                                     </div>
@@ -349,6 +468,7 @@
                         <div class="sidebar-nav-fixed">
                             <ul class="list-unstyled">
                                 <li><a href="#student" class="active">Student</a></li>
+                                <li><a href="#student-health">Student Health Info</a></li>
                                 <li><a href="#parent">Parent/Guardian</a></li>
                             </ul>
                         </div>
