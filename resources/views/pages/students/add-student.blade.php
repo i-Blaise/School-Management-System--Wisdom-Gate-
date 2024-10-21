@@ -103,18 +103,19 @@
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                         <label for="input-select" class="col-form-label">Class*</label>
-                                                        <select class="form-control" id="input-select">
-                                                            <option>Class 1</option>
-                                                            <option>Class 2</option>
-                                                            <option>Class 3</option>
-                                                            <option>Class 4</option>
-                                                            <option>Class 5</option>
+                                                        <select class="form-control" id="input-select" name="class">
+                                                            <option value="1">Class 1</option>
+                                                            <option value="2">Class 2</option>
+                                                            <option value="3">Class 3</option>
+                                                            <option value="4">Class 4</option>
+                                                            <option value="5">Class 5</option>
+                                                            <option value="6">Class 6</option>
                                                         </select>
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputText3" class="col-form-label">Students Picture</label>
+                                                    <label for="inputText3" class="col-form-label">Students Picture*</label>
                                                     <div class="custom-file mb-3">
-                                                        <input type="file" class="custom-file-input" id="customFile">
+                                                        <input type="file" class="custom-file-input" id="customFile" name="student_image">
                                                         <label class="custom-file-label" for="customFile">File Input</label>
                                                     </div>
                                                 </div>
@@ -125,7 +126,7 @@
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Date Of Birth*</label>
                                                     <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" name="date_of_birth"/>
                                                         <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
                                                             <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                                         </div>
@@ -135,7 +136,7 @@
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Date Of Admission</label>
                                                     <div class="input-group date" id="datetimepicker44" data-target-input="nearest">
-                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker44" />
+                                                        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker44" name="date_of_admission" />
                                                         <div class="input-group-append" data-target="#datetimepicker44" data-toggle="datetimepicker">
                                                             <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
                                                         </div>
@@ -147,36 +148,36 @@
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Hometown*</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="home_town">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Nationality*</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="nationality">
                                                 </div>
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="input-select" class="col-form-label">Gender*</label>
-                                                    <select class="form-control" id="input-select">
+                                                    <select class="form-control" id="input-select" name="gender">
                                                         <option>Male</option>
                                                         <option>Female</option>
                                                     </select>
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Residence Address*</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="residence_address">
                                                 </div>
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Number of Siblings*</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="num_of_siblings">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="input-select" class="col-form-label">Living with both Parent*</label>
-                                                    <select class="form-control" id="input-select">
+                                                    <select class="form-control" id="input-select" name="living_with_both_parents">
                                                         <option>Yes</option>
                                                         <option>No</option>
                                                     </select>
@@ -185,19 +186,19 @@
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-12">
-                                                    <label for="inputText3" class="col-form-label">If no, why?*</label>
-                                                    <textarea id="inputText3" type="text" class="form-control"></textarea>
+                                                    <label for="inputText3" class="col-form-label">If no, why?</label>
+                                                    <textarea id="inputText3" type="text" class="form-control" name="why_not_living_w_both_parents"></textarea>
                                                 </div>
                                             </div>
 
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Language Spoken*</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="language1">
                                                 </div>
                                                 <div class="form-group col-md-6">
                                                     <label for="inputText3" class="col-form-label">Second Language Spoken</label>
-                                                    <input id="inputText3" type="text" class="form-control">
+                                                    <input id="inputText3" type="text" class="form-control" name="language2">
                                                 </div>
                                             </div>
 
@@ -286,9 +287,6 @@
                                                     <textarea id="inputText3" type="text" class="form-control"></textarea>
                                                 </div>
                                             </div>
-
-                                            <button type="submit" class="btn btn-primary btn-block">Submit Form</button>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -321,11 +319,11 @@
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="inputText3" class="col-form-label">First Name*</label>
+                                                <label for="inputText3" class="col-form-label">Surname*</label>
                                                 <input id="inputText3" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="inputText3" class="col-form-label">Last Names*</label>
+                                                <label for="inputText3" class="col-form-label">Other Names*</label>
                                                 <input id="inputText3" type="text" class="form-control">
                                             </div>
                                         </div>
@@ -397,11 +395,11 @@
                                                 </select>
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="inputText3" class="col-form-label">First Name*</label>
+                                                <label for="inputText3" class="col-form-label">Surname*</label>
                                                 <input id="parent2-fname" type="text" class="form-control">
                                             </div>
                                             <div class="form-group col-md-5">
-                                                <label for="inputText3" class="col-form-label">Last Names*</label>
+                                                <label for="inputText3" class="col-form-label">Other Names*</label>
                                                 <input id="parent2-lname" type="text" class="form-control">
                                             </div>
                                         </div>
@@ -457,7 +455,8 @@
                             </div>
                         </div>
 
-                        <a href="#" class="btn btn-primary btn-block">Submit Form</a>
+                        <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+                        </form>
                         <!-- ============================================================== -->
                         <!-- end select options  -->
                         <!-- ============================================================== -->
